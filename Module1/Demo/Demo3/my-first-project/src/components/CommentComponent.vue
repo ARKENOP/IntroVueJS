@@ -1,18 +1,16 @@
 <template>
     <div>
-        <h2>Comment</h2>
-        <p>{{ comment.content }}</p>
+      <p>{{ comment }}</p>
     </div>
-</template>
-
-<script>
-    export default {
-        name: 'CommentComponent',
-        props: {
-            comment: Object
-        }
+  </template>
+  
+  <script>
+  export default {
+    name: 'CommentComponent',
+    props: {
+      comment: String
     }
-</script>
-
-<style>
-</style>
+  }
+  
+  </script>
+  

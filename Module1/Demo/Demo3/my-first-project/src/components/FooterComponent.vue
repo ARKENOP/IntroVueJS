@@ -1,22 +1,21 @@
 <template>
     <footer>
-        <p>&copy; 2023 mon Blog</p>
+      <p>&copy; 2023 Mon Blog</p>
     </footer>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  export default {
     name: 'FooterComponent'
-}
-</script>
-
-<style>
-footer {
-    background-color: #ccc;
-    padding: 20px;
+  }
+  
+  </script>
+  
+  <style>
+  footer {
+    background-color: lightgray;
+    padding: 10px 0;
     text-align: center;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-}
-</style>
+  }
+  </style>
+  
