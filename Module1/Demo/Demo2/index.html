@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS le S</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>VueJS Formulaire</h1>
+        <input type="text" v-model="inputText" @input="updatedInputText"/>
+        <button @click="addMessage">Valider</button>
+        <p>Text en direct : {{inputText}}</p>
+
+        <ul>
+            <li v-for="(text, index) in validatedTexts":key="index">
+                {{text}}
+                <button @click="removeMessage(index)">Supprimer</button>
+            </li>
+        </ul>
+
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    inputText: '',
+                    validatedTexts: []
+                }
+            },
+            methods: {
+                updatedInputText() {
+                    
+                },
+                addMessage() {
+                    this.validatedTexts.push(this.inputText);
+                    this.inputText = '';
+            },
+            removeMessage(index) {
+                this.validatedTexts.splice(index, 1);
+            }
+        }
+        });
+        const vm = app.mount('#app');
+    </script>
+</body>
+</html>
