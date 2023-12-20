@@ -2,7 +2,8 @@
   <header>
     <h1>Mon Blog</h1>
     <nav>
-      <!--elements nav-->
+      <router-link to="/">Accueil</router-link>
+      <router-link to="/formulaire">Aller sur Formulaire Live</router-link>
     </nav>
   </header>
 </template>

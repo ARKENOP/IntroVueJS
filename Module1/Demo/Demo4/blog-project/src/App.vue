@@ -1,5 +1,6 @@
 <template>
   <HeaderComponent />
+  <routeur-view></routeur-view>
   <ArticleComponent :article="currentArticle" />
   <SidebarComponent />
   <FooterComponent />
